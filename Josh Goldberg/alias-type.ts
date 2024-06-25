@@ -1,5 +1,5 @@
 // Aliasy typów nie są kompilowane do JS,
-// są dostępne tylko podczas pracy programistycznej
+// są dostępne tylko podczas pracy programistycznej!
 type RawData = boolean | number | string | null | undefined;
 
 let rawDataFirst: RawData;
@@ -15,3 +15,7 @@ type IdMaybe = Id | undefined | null;
 
 // type IdMaybe = Id | undefined | null;
 // type Id = number | string;
+
+type SomeType = string | undefined;
+// console.log(SomeType);
+// Error: SomeType only refers to a type, but is being used as a value
